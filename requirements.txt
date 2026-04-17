@@ -1,6 +1,10 @@
 fastapi
 uvicorn
-openai
-stripe
+sqlalchemy
 psycopg2-binary
+passlib[bcrypt]
 cryptography
+python-jose[cryptography]
+pydantic[email]
+stripe
+httpx
