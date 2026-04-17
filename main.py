@@ -234,7 +234,7 @@ async def ask_ai(prompt):
 
 @app.post("/chat")
 async def chat(data: Chat, user=Depends(get_user)):
-    rate_limit(user.id)
+   # rate_limit(user.id)
 
     if user.plan == "free":
         raise HTTPException(403, "Upgrade requerido")
