@@ -165,8 +165,8 @@ def checkout(user=Depends(get_user)):
         mode="subscription",
         line_items=[{"price": PRICE_ID, "quantity": 1}],
         client_reference_id=str(user.id),
-        success_url="https://tu-dominio.com/success",
-        cancel_url="https://tu-dominio.com/cancel"
+        success_url="https://heyia-production.up.railway.app/success",
+        cancel_url="https://heyia-production.up.railway.app/cancel"
     )
 
     return {"url": session.url}
