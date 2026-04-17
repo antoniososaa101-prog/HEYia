@@ -89,7 +89,7 @@ def get_user(token: str = Depends(oauth2), db: Session = Depends(get_db)):
 # ⚡ REDIS
 # ============================
 
-r = redis.Redis(host="localhost", port=6379)
+#r = redis.Redis(host="localhost", port=6379)
 
 def rate_limit(uid):
     key = f"user:{uid}"
