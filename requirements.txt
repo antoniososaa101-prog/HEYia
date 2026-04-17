@@ -3,3 +3,4 @@ uvicorn
 openai
 stripe
 psycopg2-binary
+cryptography
